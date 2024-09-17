@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #firstButton {
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body onclick="showRadialMenu(event)">
+    <div id="firstButton">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <script>
+        function showRadialMenu(event) {
+            let cursorPositionX  = event.x
+            let cursorPositionY  = event.y
+           
+            // let firstButtonLeftProperty = cursorPosition.x + ...
+            // let firstButtonTopProperty = cursorPosition.y + ...
+
+            console.log("cursorPositionX: " + cursorPositionX)
+            console.log("cursorPositionY: " + cursorPositionY)
+        }
+    </script>
+</body>
+</html>
